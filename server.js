@@ -10,6 +10,7 @@ var app = express();
 var PORT = process.env.PORT || 5000;
 
 var db = require("./app/models")
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -22,7 +23,7 @@ app.use(express.static("./app/public"));
 // ================================================================================
 
 // require("./app/routes/api-routes")(app);
-require("./app/routes/html-routes")(app);
+require("./app/routes/htmlRoutes.js")(app);
 // require("./app/public")(app);
 
 // =============================================================================
