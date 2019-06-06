@@ -91,3 +91,88 @@
     text-align: center;
     font-size: 14px;
 }
+
+.animation-pop {
+    height: 100%;
+    width: 100%;
+    background: #fafafa;
+}
+
+.generate-txt {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 700;
+}
+
+.generate-txt-contianer {
+    width: 100%;
+    text-align: center;
+}
+
+.spin-container {
+    width: 100%;
+    text-align: center;
+}
+
+.spin-img {
+    margin-top: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.btm-generate-txt-contianer {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btm-generate-txt {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.loading {
+    font-size: 28px;
+}
+  
+    .one {
+      opacity: 0;
+      -webkit-animation: dot 1.3s infinite;
+      -webkit-animation-delay: 0.0s;
+      animation: dot 1.3s infinite;
+      animation-delay: 0.0s;
+  }
+  
+  .two {
+      opacity: 0;
+      -webkit-animation: dot 1.3s infinite;
+      -webkit-animation-delay: 0.2s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.2s;
+  }
+  
+  .three {
+      opacity: 0;
+      -webkit-animation: dot 1.3s infinite;
+      -webkit-animation-delay: 0.3s;
+       animation: dot 1.3s infinite;
+       animation-delay: 0.3s;
+  }
+    
+  }
+  
+  @-webkit-keyframes dot {
+        0% { opacity: 0; }
+       50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  
+  @keyframes dot {
+        0% { opacity: 0; }
+       50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
