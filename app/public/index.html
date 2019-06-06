@@ -11,34 +11,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./images/le-tote-logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     
 
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-s-12">
-            <div id="header">
-                <a href="https://letote.trendblend.com" target="_blank"><img src="./images/le-tote-logo.png" id="logo"></a>
-                <p class="company-name">Trend Blend</p>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
 
-        <h1>TREND BLEND AND LE TOTE TESTER</h1>
+        <div class="popover-container">
+            <div id="popoverContainer" class="popover-content">
+                <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="inner-img">
+                       <img class="dress-img" src="https://d2zk4u3pjs0oai.cloudfront.net/assets/yellow-dress-laydown-2408ab6c320f7b43a46a896c47ace1fa.png"> 
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="pop-text-cont">
+                    <h2 class="top-pop-txt">Want to save 30% on your new look?</h2>
+                    <a class="code-btn" href="#"><button class="get-offer-btn" id="getOfferBtn">Yes! Get Code</button></a>
+                    <a class="exit-link" href="#"><p class="btm-pop-txt">No thank you, keep shopping</p></a>
+                 </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
     </div>
-    <div>
-        <footer id="footer">
-                    <span class="footer-element">© 2019 Trend Blend</span>
-                    <a class="footer-link" href="#" target="_blank">Disclosure</a>
-                    <a class="footer-link" href="#" target="_blank">Privacy</a>
-                    <a class="footer-link" href="#" target="_blank">Terms</a>
-        </footer>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -47,14 +48,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-
         <script>
-                var d = new Date();
-                var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-                var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                document.getElementById("dates").innerHTML = '<p class="sub-text-norm"><span style="display: inline-block;">'+ days[d.getDay()] + " " + months[d.getMonth()] + " " + d.getDate() + "," + " " + d.getFullYear();'</span></p>'
-                console.log(d);
-            </script>
+            var d = new Date();
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById("dates").innerHTML = '<p class="sub-text-norm"><span style="display: inline-block;">'+ days[d.getDay()] + " " + months[d.getMonth()] + " " + d.getDate() + "," + " " + d.getFullYear();'</span></p>'
+            console.log(d);
+        </script>
 </body>
 
 </html>
