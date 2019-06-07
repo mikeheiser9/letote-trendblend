@@ -9,6 +9,7 @@
 
 .col-sm-6 {
     max-height: 100%;
+    width: 50% !important;
 }
 
 .container {
@@ -21,6 +22,8 @@
     background-color: #000;
     z-index: 1;
     scroll-behavior: smooth;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .container::after {
@@ -44,8 +47,8 @@
 }
 
 .popover-content {
-  width: 50%;
-  height: 50%;
+  width: 705px;
+  height: 377px;
   overflow: hidden;
   margin: auto;
   position: absolute;
@@ -214,3 +217,67 @@
     color: navy;
     border: 2px solid black; 
   }
+
+  @media (max-width: 767px) {
+    .popover-content {
+        width: 550px;
+        height: 400px;
+    }
+    .top-pop-txt {
+        padding-top: 60px;
+        font-size: 35px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .popover-content {
+        width: 475px;
+        height: 280px;
+    }
+    .dress-img {
+        width: 200px;
+    }
+    .top-pop-txt {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+    .btm-pop-txt {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px) {
+    .col-xs-6 .col-sm-6 .col-md-6 .col-lg-6 .col-xl-6 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .popover-content {
+        width: 300px;
+        height: 450px;
+    }
+    .col-sm-6 {
+        width: 100% !important;
+    }
+    .inner-img{
+        margin-top: 15px;
+    }
+    .dress-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 120px;
+        height: auto;
+    }
+    .generate-txt {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .done-txt-top {
+        padding: 15px;
+    }
+    .done-txt-top h1 {
+        font-size: 28px;
+    }
+}
